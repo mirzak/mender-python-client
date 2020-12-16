@@ -17,7 +17,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="mender-python-client-mendersoftware",
+    name="mender",
     version="0.0.1",
     license="Apache 2.0",
     author="Mendersoftware",
@@ -35,7 +35,7 @@ setuptools.setup(
     ],
     keywords=["mender", "OTA", "updater"],
     install_requires=["cryptography", "requests"],
-    entry_points={"console_scripts": ["mender-python-client-mendersoftware=mender:main"]},
+    entry_points={"console_scripts": ["mender=src:main"]},
     python_requires=">=3.6",
     zip_safe=False,
     include_package_data=True,
